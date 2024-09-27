@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //this will return a NodeList
+    document.querySelectorAll('.list-items').forEach((item) => {
+        item.style.color = 'red';
+        const  li= document.createElement('li');
+        li.innerText = 'item4';
+        document.querySelector('ul').appendChild(li);
+        const heading=document.querySelector('h3');
+        console.log(heading) ///output: <h3>Dom manipulation</h3>
+    });
+
+    </script>
+</head>
+<body>
+    <div id="title">
+        <h3>
+            Dom manipulation
+        </h3>
+        <p id="p-tag" class="pp">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+        <ul>
+         <li class="list-items"> item1</li>
+         <li class="list-items">item2</li>
+         <li class="list-items">item3</li>
+        </ul>
+    </div>
+    
+</body>
+</html>

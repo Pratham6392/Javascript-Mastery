@@ -5,27 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        //getElementById
-        const title = document.getElementById('title');
-        title.innerText = 'Hello World';
-
-        //getElementsByClassName
-        const ptag= document.getElementsByClassName('pp');
-
-        //querySelector
-        const ptag1 = document.querySelector('#p-tag');
-
-        //querySelectorAll
-        const ptag2 = document.querySelectorAll('.pp');
+        //eventListners
+        const btn = document.querySelector('.btn');
+        let changeHeading= document.querySelector('h3');
+        function changeText(){
+            changeHeading.innerText = 'Hello World';
+        }
 
     </script>
 </head>
-
 <body>
     <div id="title">
         <h3>
             Dom manipulation
         </h3>
+        <button class="btn">
+            Enter
+        </button>
         <p id="p-tag" class="pp">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
         </p>

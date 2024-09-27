@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //childNodes
+        const title = document.getElementById('title');
+        console.log(title.childNodes); //output: NodeList(3) [text, h3, text]
+        console.log(title.childNodes[0]); //output: #text
+        console.log(title.childNodes[1]); //output: <h3>Dom manipulation</h3>
+        console.log(title.childNodes[2]); //output: #text
+        console.log(title.childNodes[1].childNodes); //output: NodeList [text]
+        console.log(title.childNodes[1].childNodes[0]); //output: #text
+        console.log(title.childNodes[1].childNodes[0].nodeValue); //output: Dom manipulation
+        console.log(title.childNodes[1].childNodes[0].nodeValue = 'Hello World'); //output: Hello World
+
+        //children
+        
+    </script>
+</head>
+<body>
+    <div id="title">
+        <h3>
+            Dom manipulation
+        </h3>
+        <p id="p-tag" class="pp">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+    </div>
+    
+</body>
+</html>
